@@ -1,0 +1,26 @@
+.navbar-brand {
+    font-size:  40px;
+    color: rgb(221, 77, 25);
+}
+
+.container-fluid {
+    background-color: rgb(247, 247, 247);
+}
+
+
+#inicio {
+    background-image: url('caminhaosite.jpg');
+    min-height: 800px;
+    background-size: cover;
+    padding: 30px 30px;
+    color:rgb(247, 247, 247);
+    font-style:inherit;
+    font-size: x-large;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(221, 77, 25);
+    color:rgb(247, 247, 247)
+}

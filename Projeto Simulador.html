@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilo-simulador.css">
+    <script src="js/script.js">defer</script>
+    <title>Simulador JCD</title>
+  </head>
+  <body>
+    <header class="cabeçalho">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Logo-jcd.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-center">
+            JCD ARMAZÉM
+          </a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="inicio">
+        <div class="container"> 
+          <h1>Olá cliente,</h1>
+          <span>aqui você parcela suas compras em até 12 vezes!</span>    
+        </div>
+    
+      </br>
+    
+      <script>
+        window.confirm("Atenção aos valores digitados! Boas vendas.")
+        var valor = parseFloat(prompt("Digite o valor à ser cobrado (valor à vista): "))
+        var valorparc = parseFloat
+        var aux = parseFloat
+        var aux1 = parseFloat
+        var valorp = parseFloat
+
+        document.write("Valor à vista: " + valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} ) + ". " + "<br>" + "<br>")
+
+            for (var i = 1 ; i<13 ; i++){
+                aux1 = 0.0253
+                aux = i*0.01
+                valorparc = valor + (valor*aux1) + (aux*valor)
+                valorp = valorparc/i  
+                document.writeln("Cobrar <strong>" + valorparc.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} ) +
+                     "</strong> em " + i + " parcelas de " + valorp.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} ) + ". " + "<br>")
+            }
+        </script> 
+      </section>
+      
+    </main>
+  </body>
+</html>
